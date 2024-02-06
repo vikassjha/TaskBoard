@@ -1,0 +1,20 @@
+<app-header></app-header>
+<app-task-generator></app-task-generator>
+<hr>
+<div class="container">
+    <div class="box">
+        <h3 >To Do</h3>
+        <hr>
+         <app-todo *ngFor="let task of todoLists" [todoTaskName]="task"></app-todo>
+    </div>
+    <div class="box">
+        <h3>Doing</h3>
+        <hr>
+         <app-doing *ngFor="let tasks of toDoingLists" [todoingTaskName]= "tasks"></app-doing>
+    </div>
+    <div class="box">
+        <h3>Done</h3>
+        <hr>
+         <app-done *ngFor="let taskss of toDoneLists" [todoneTaskName]="taskss"></app-done>
+    </div>
+</div>

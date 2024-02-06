@@ -1,0 +1,29 @@
+<div class="container mt-8">
+    <div class="row justify-content-center">
+       
+        <div class="col-md-6">
+            
+            <div class="rounded p-3" style="background-color:rgb(108, 135, 180) ; height: 180px;border-radius: 10px;">
+          <div >
+
+            <label style="color:white;position:relative;left:80px;top:40px">Task Name  </label>  
+            <input style="position:relative;left:90px;top:40px" type="text" [(ngModel)]="inputTaskName"> 
+          </div>      
+        
+          
+        
+          <button  style="position: absolute ;bottom:50px;right:400px" type="button" class="btn btn-primary"
+          (click)="onAddToDo()">Add To Do</button>
+          <button style="position: absolute ;bottom:50px;right:250px" type="button" class="btn btn-warning"
+          (click)="onAddToDoing()">Add To Doing</button>
+          <button style="position: absolute ;bottom:50px;right:100px" type="button" class="btn btn-success"
+          (click)="onAddToDone()">Add To Done</button>
+        
+            </div>
+        </div>
+    </div>
+
+
+
+
+</div>
